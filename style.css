@@ -12,10 +12,11 @@
 
 .sidebar {
     grid-area: 1 / 1 / 4 / 2;
-    background-color: #7BDFF2;
+    background-color: #4e8e9b;
     display: grid;
     grid-template: 100px 250px 200px / 1fr;
     padding: 15px;
+    color: white;
 }
 
 .sidebar #nav {
@@ -31,13 +32,73 @@
 .header {
     grid-area: 1 / 2 / 2 / 3;
     display: grid;
-    grid-template: 1fr 1fr / 2fr 1fr;
-    padding: 15px;
+    grid-template: 1fr 1fr / 2fr 1.25fr;
+    padding: 15px 30px;
+}
+
+.header .search {
+    display: flex;
+    align-items: center;
+}
+
+.header .search button {
+    background-color: transparent;
+    border: none;
+}
+
+.header .search button:hover {
+    cursor: pointer;
+}
+
+.header .search img {
+    width: 15px;
+    padding-right: 20px;
+}
+
+.header .search input {
+    display: flex;
+    flex-grow: 1;
+    max-width: 500px;
+    height: 20px;
+    border: none;
+    background-color: #d0d6d5;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+.header .search input:focus {
+    outline: none;
+    border: 3px solid #4e8e9b;
+}
+
+.header .header-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.header .header-buttons button {
+    background-color: #4e8e9b;
+    color: white;
+    font-size: medium;
+    border: none;
+    border-radius: 25px;
+    padding: 10px;
+    width: 100%;
+}
+
+.header .header-buttons button:hover {
+    cursor: pointer;
+}
+
+.header .header-buttons button:active {
+    background-color: #386770;
 }
 
 .main {
     grid-area: 2 / 2 / 3 / 3;
-    background-color: #EFF7F6;
+    background-color: #d0d6d5;
     display: grid;
     grid-template-columns: 3fr 1fr;
     padding: 15px;
@@ -59,7 +120,7 @@
 
 .footer {
     grid-area: 3 / 2 / 4 / 3;
-    background-color: #EFF7F6;
+    background-color: #d0d6d5;
     display: flex;
     justify-content: center;
     align-items: flex-end;
