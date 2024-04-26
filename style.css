@@ -4,6 +4,10 @@
     padding: 0;
 }
 
+button:hover {
+    cursor: pointer;
+}
+
 .container {
     display: grid;
     grid-template: 1fr 5fr 0.5fr / 1fr 4fr;
@@ -32,6 +36,12 @@
 .sidebar #dash #board {
     display: flex;
     align-items: center;
+}
+
+.sidebar button {
+    background-color: transparent;
+    border: none;
+    color: white;
 }
 
 .sidebar #nav {
@@ -85,10 +95,6 @@
     border: none;
 }
 
-.header .search button:hover {
-    cursor: pointer;
-}
-
 .header .search img {
     width: 25px;
     padding-right: 20px;
@@ -125,10 +131,6 @@
     border-radius: 25px;
     padding: 10px;
     width: 100%;
-}
-
-.header .header-buttons button:hover {
-    cursor: pointer;
 }
 
 .header .header-buttons button:active {
