@@ -180,6 +180,24 @@ button:hover {
     padding: 20px;
 }
 
+.main #social #announce {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.main #social #announce p:nth-child(-n + 2) {
+    border-bottom: 1px solid #d0d6d5;
+}
+
+.main #social #trend {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
 .footer {
     grid-area: 3 / 2 / 4 / 3;
     background-color: #d0d6d5;
