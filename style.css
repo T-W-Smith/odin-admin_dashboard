@@ -128,6 +128,11 @@ button:hover {
     width: 25px;
 }
 
+.header #profile button {
+    background-color: transparent;
+    border: none;
+}
+
 .header #profile #pic {
     width: 40px;
 }
