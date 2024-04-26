@@ -82,7 +82,7 @@ button:hover {
     grid-area: 1 / 2 / 2 / 3;
     display: grid;
     grid-template: 1fr 1fr / 2fr 1.25fr;
-    padding: 15px 30px;
+    padding: 1px 30px;
 }
 
 .header .search {
@@ -115,6 +115,41 @@ button:hover {
     outline: none;
     border: 3px solid #4e8e9b;
 }
+
+.header #profile {
+    display: flex;
+    gap: 30px;
+    padding: 20px;
+    justify-content: end;
+    align-items: center;
+}
+
+.header #profile #bell {
+    width: 25px;
+}
+
+.header #profile #pic {
+    width: 40px;
+}
+
+.header #welcome {
+    display: grid;
+    grid-template: 35px 35px / 75px 1fr;
+    gap: 10px;
+}
+
+.header #welcome img {
+    grid-row: 1 / 3;
+    width: 70px;
+    height: auto;
+    align-self: center;
+    justify-self: center;
+}
+
+.header #welcome #message {
+    align-self: flex-end;
+}
+
 
 .header .header-buttons {
     display: flex;
