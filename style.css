@@ -1,5 +1,17 @@
+.roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+.roboto-bold {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
 * {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
 }
