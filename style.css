@@ -239,7 +239,12 @@ button:hover {
     gap: 20px;
 }
 
-.main #social #announce p:nth-child(-n + 2) {
+.main #social #announce div {
+    padding: 0;
+    border-radius: 0;
+}
+
+.main #social #announce div:nth-child(-n + 2) {
     border-bottom: 1px solid #d0d6d5;
 }
 
