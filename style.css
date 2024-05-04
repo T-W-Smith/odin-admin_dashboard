@@ -1,3 +1,4 @@
+/* Roboto Font */
 .roboto-regular {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
@@ -16,18 +17,22 @@
     padding: 0;
 }
 
+/* Changes cursor for all buttons on hover */
 button:hover {
     cursor: pointer;
 }
 
+/* Entire Grid layout for page */
 .container {
     display: grid;
     grid-template: 1fr 5fr 0.5fr / 1fr 4fr;
 }
 
+/* Sidebar */
 .sidebar {
     grid-area: 1 / 1 / 4 / 2;
     background-color: #4e8e9b;
+    /* Grid layout for sidebar */
     display: grid;
     grid-template: 100px 400px 200px / 1fr;
     padding: 15px;
@@ -37,6 +42,7 @@ button:hover {
 .sidebar #dash img {
     width: 50px;
     padding-right: 20px;
+    /* Turns icons to white */
     filter: invert(100%);
 }
 
@@ -57,6 +63,7 @@ button:hover {
 }
 
 .sidebar #nav {
+    /* Grid layout for navigation buttons in sidebar */
     display: grid;
     grid-template-rows: repeat(6, 30px);
     gap: 20px;
@@ -65,6 +72,7 @@ button:hover {
 .sidebar #nav img {
     width: 30px;
     padding-right: 20px;
+    /* Turns icons to white */
     filter: invert(100%);
 }
 
@@ -74,6 +82,7 @@ button:hover {
 }
 
 .sidebar #settings {
+    /* Grid layout for settings buttons in sidebar */
     display: grid;
     grid-template-rows: repeat(3, 30px);
     gap: 20px;
@@ -82,6 +91,7 @@ button:hover {
 .sidebar #settings img {
     width: 30px;
     padding-right: 20px;
+    /* Turns icons to white */
     filter: invert(100%);
 }
 
@@ -90,13 +100,16 @@ button:hover {
     align-items: center;
 }
 
+/* Header */
 .header {
     grid-area: 1 / 2 / 2 / 3;
+    /* Grid layout for header */
     display: grid;
     grid-template: 1fr 1fr / 2fr 1.25fr;
     padding: 1px 30px;
 }
 
+/* Header search box area */
 .header .search {
     display: flex;
     align-items: center;
@@ -114,6 +127,7 @@ button:hover {
 
 .header .search input {
     display: flex;
+    /* Allows search box to be flexible with sizing */
     flex-grow: 1;
     max-width: 500px;
     height: 20px;
@@ -128,6 +142,7 @@ button:hover {
     border: 3px solid #4e8e9b;
 }
 
+/* Header current profile area */
 .header #profile {
     display: flex;
     gap: 30px;
@@ -150,7 +165,9 @@ button:hover {
     border-radius: 100%;
 }
 
+/* Header welcome area for current profile */
 .header #welcome {
+    /* Header welcome area grid layout */
     display: grid;
     grid-template: 35px 35px / 75px 1fr;
     gap: 10px;
@@ -169,6 +186,7 @@ button:hover {
     align-self: flex-end;
 }
 
+/* Header buttons area */
 .header .header-buttons {
     display: flex;
     justify-content: center;
@@ -190,16 +208,20 @@ button:hover {
     background-color: #386770;
 }
 
+/* Main */
 .main {
     grid-area: 2 / 2 / 3 / 3;
     background-color: #d0d6d5;
+    /* Grid layout for main */
     display: grid;
     grid-template-columns: 3fr 1fr;
     padding: 20px;
     gap: 20px;
 }
 
+/* Main projects area */
 .main #projects {
+    /* Grid layout for projects */
     display: grid;
     grid-template: 50px 1fr 1fr 1fr / 1fr 1fr;
     gap: 20px;
@@ -210,6 +232,7 @@ button:hover {
     border-radius: 10px;
     padding: 20px;
     height: 200px;
+    /* Adds colored line on left side of projects box */
     border-left: 10px solid #4e8e9b;;
 }
 
@@ -218,7 +241,9 @@ button:hover {
     align-self: flex-end;
 }
 
+/* Main social area */
 .main #social {
+    /* Grid layout for social area */
     display: grid;
     grid-template-rows: 50px 1fr 50px 1fr;
     gap: 20px;
@@ -234,7 +259,9 @@ button:hover {
     padding: 20px;
 }
 
+/* Main social announcement area */
 .main #social #announce {
+    /* Grid layout for announcement area */
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
     gap: 20px;
@@ -250,11 +277,14 @@ button:hover {
     font-size: small;
 }
 
+/* Adds a line under the first two announcement posts */
 .main #social #announce div:nth-child(-n + 2) {
     border-bottom: 1px solid #d0d6d5;
 }
 
+/* Main social trending area */
 .main #social #trend {
+    /* Grid layout for trending area */
     display: grid;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     gap: 20px;
@@ -264,6 +294,7 @@ button:hover {
 
 .main #social #trend div {
     padding: 0;
+    /* Grid layout for the trending profiles */
     display: grid;
     grid-template: 1fr 1fr / 45px 1fr;
     gap: 10px;
@@ -280,6 +311,7 @@ button:hover {
     font-size: small;
 }
 
+/* Footer */
 .footer {
     grid-area: 3 / 2 / 4 / 3;
     background-color: #d0d6d5;
